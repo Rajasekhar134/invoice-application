@@ -49,7 +49,7 @@ const InvoiceForm = () => {
     };
 
     try {
-      const response = await axios.post('http://43.205.177.19:5000/api/invoices', invoiceData, { responseType: 'blob' });
+      const response = await axios.post('http://52.87.172.33:5000/api/invoices', invoiceData, { responseType: 'blob' });
       
       // Create a URL for the PDF Blob and trigger download
       const url = window.URL.createObjectURL(new Blob([response.data]));
